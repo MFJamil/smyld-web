@@ -2,7 +2,7 @@
 
 This python program generates a maven based full interactive project that includes Spring Boot in the backend and one of the web based frameworks (Angular, Vue or React) in the frontend, the generated project will include an already exchanged message with the backend that will get displayed on the frontend startup page.
 
-The tool holds the following features:
+---
 ### Usage
 
 usage: springGenerator.py [-h] [-t {angular,vue,react}] -n NAME -g GROUP
@@ -16,5 +16,6 @@ usage: springGenerator.py [-h] [-t {angular,vue,react}] -n NAME -g GROUP
   * -c : the client port number, this is the port number that can be used in development mode, default is 4200.
   * -d : the generated project main path, default path is the current active directory that this python program is invoked at.    
   
+ ---
  
  **_IMPORTANT_**: This program is only tested under linux systems so far 
