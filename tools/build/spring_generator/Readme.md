@@ -47,6 +47,11 @@ usage: springGenerator.py [-h] [-t {angular,vue,react}] -n NAME -g GROUP
 	}
 ```
 
+The resultant startup page will display the message out of the code snippet above can be seen below:
+
+![Spring / Angular page](https://github.com/MFJamil/SMYLD/blob/master/documents/images/spring_angular_page.png)
+
+
 The same applies for the other two frameworks (i.e. React and Vue), however the APIs used will be different.
 _It is important to note that the generated frontends are all written in Typescript!_
  
