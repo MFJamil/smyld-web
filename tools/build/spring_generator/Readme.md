@@ -21,6 +21,38 @@ usage: springGenerator.py [-h] [-t {angular,vue,react}] -n NAME -g GROUP
  ```diff 
  - IMPORTANT 
  ``` 
- This <span style="color:red;">program</span> is only tested under linux systems so far 
+ _This program is only tested under linux systems so far_ 
+ 
+ ---
+ ### Examples
+ 
+ Issuing the following command will create a project called 'CustomApp' with a group/package 'com.smyld.app', setting the port number to  8091 and the angular front end development port to 4500
+ 
+ ```bash
+ springGenerator.py -t angular -n CustomApp -g com.smyld.app -s 8091 -c 4500
+ ```
+ 
+ You need to run a normal maven build command from within the generated folder to build the backend and frontend projects.
+ 
+ Upon opening the projects with your favorite editor, you can see the line below :
+ ```typescript
+ this.http.get<Message>("/api").subscribe(servMessage => this.serverMessage = servMessage.text);
+ ```
+ inside the app.component.ts file. The frontend is sending a message request from the backend, on the backend project, you will find where this message is processed, see the line below:
+ 
+ ```java
+ 	@GetMapping
+	public Message getServerMessage(){
+		return new Message("This is the server message from Spring Boot");
+	}
+```
+
+The same applies for the other two frameworks (i.e. React and Vue), however the APIs used will be different.
+_It is important to note that the generated frontends are all written in Typescript!_
+ 
+---
+
+## Contributors notice
+Feel free to extend the generator. The maven functionality allow you to template the created folders, the created file name as well as the created file contents. Take a look at the already available templates to have an idea on how it is created.
 
 
