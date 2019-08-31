@@ -50,5 +50,9 @@ usage: springGenerator.py [-h] [-t {angular,vue,react}] -n NAME -g GROUP
 The same applies for the other two frameworks (i.e. React and Vue), however the APIs used will be different.
 _It is important to note that the generated frontends are all written in Typescript!_
  
+---
+
+## Contributors notice
+Feel free to extend the generator. The maven functionality allow you to template the created folders, the created file name as well as the created file contents. Take a look at the already available templates to have an idea on how it is created.
 
 
