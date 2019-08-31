@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 import argparse,os,shutil
 
-
+# Templates can be extended here, you need to add the type name and the relevant template folder
 templates = {"angular":"sp_an_1","vue":"sp_vu_1","react":"sp_re_1"}
 print ("This is the spring generator" )
 
@@ -11,6 +11,7 @@ templatesDir = filePath[:filePath.rfind("/")+1] +  "templates"
 exclude_paths = ["node_modules","e2e","node"]
 def initArgumnets():
 	parser = argparse.ArgumentParser()
+	# Type can be extended with the new template which will be picked by the python program via reading the equivalent folder from the templates array above
 	parser.add_argument('-t','--type'  ,choices=['angular', 'vue', 'react'],help='Type of the generated project',default="angular")
 	parser.add_argument('-n','--name'  ,help='The name of the project',required=True)
 	parser.add_argument('-g','--group' ,help='The package name, group name of the project',required=True)
@@ -85,9 +86,8 @@ def updateFiles(args):
 				changed,newName =  checkTemplate(os.path.basename(curFile),keyText)
 				updateFileContents(root + "/" + newName,keyText);
 
-def generateAngular(template,args):
+def generateTemplate(template,args):
 	global templatesDir
-	print ("Generating Angular project with name " + args.name)
 	# Copying over the template
 	os.popen("cp -r " + templatesDir + "/" + template + " " + args.dir + "/" + args.name);
 	
@@ -95,7 +95,7 @@ def generateAngular(template,args):
 def startGeneration(args):
 	global templates
 	if (args.type in templates ):
-		generateAngular(templates[args.type],args)
+		generateTemplate(templates[args.type],args)
 		updateFiles(args)
 		
 if __name__== "__main__":
