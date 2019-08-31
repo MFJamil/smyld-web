@@ -1,3 +1,5 @@
+# Spring Generator
+
 This python program generates a maven based full interactive project that includes Spring Boot in the backend and one of the web based frameworks (Angular, Vue or React) in the frontend, the generated project will include an already exchanged message with the backend that will get displayed on the frontend startup page.
 
 The tool holds the following features:
