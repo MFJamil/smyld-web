@@ -14,4 +14,4 @@ usage: springGenerator.py [-h] [-t {angular,vue,react}] -n NAME -g GROUP
   -d : the generated project main path, default path is the current active directory that this python program is invoked at.    
   
  
- IMPORTANT: This program is only tested unde linux systems so far 
+ IMPORTANT: This program is only tested under linux systems so far 
