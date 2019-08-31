@@ -24,7 +24,7 @@ usage: springGenerator.py [-h] [-t {angular,vue,react}] -n NAME -g GROUP
  _This program is only tested under linux systems so far_ 
  
  ---
- ###Examples
+ ### Examples
  
  Issuing the following command will create a project called 'CustomApp' with a group/package 'com.smyld.app', setting the port number to  8091 and the angular front end development port to 4500
  
