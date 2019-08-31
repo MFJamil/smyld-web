@@ -38,7 +38,17 @@ usage: springGenerator.py [-h] [-t {angular,vue,react}] -n NAME -g GROUP
  ```typescript
  this.http.get<Message>("/api").subscribe(servMessage => this.serverMessage = servMessage.text);
  ```
- inside the app.component.ts file.
+ inside the app.component.ts file. The frontend is sending a message request from the backend, on the backend project, you will find where this message is processed, see the line below:
+ 
+ ```java
+ 	@GetMapping
+	public Message getServerMessage(){
+		return new Message("This is the server message from Spring Boot");
+	}
+```
+
+The same applies for the other two frameworks (i.e. React and Vue), however the APIs used will be different.
+_It is important to note that the generated frontends are all written in Typescript!_
  
 
 
