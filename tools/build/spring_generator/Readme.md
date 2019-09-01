@@ -63,6 +63,6 @@ _It is important to note that the generated frontends are all written in Typescr
 ---
 
 ## Contributors notice
-Feel free to extend the generator. The maven functionality allow you to template the created folders, the created file name as well as the created file contents. Take a look at the already available templates to have an idea on how it is created.
+Feel free to extend the generator. The python functionality allow you to template the created folders, the created file name as well as the created file contents. Take a look at the already available templates to have an idea on how it is created.
 
 
