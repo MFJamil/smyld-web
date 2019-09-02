@@ -1,9 +1,7 @@
 //import {RunType} from './environment';
 
 export const environment = {
+  appTitle: 'SMYLD Simple Explorer',
   production: true,
-  dryRun:false,
-  certExpireWarnDuration:28,
-  svnJira: 'INT-44942'/*,
-  datasource: RunType.MockServer*/
+  dryRun:false
 };

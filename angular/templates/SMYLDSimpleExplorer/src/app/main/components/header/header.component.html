@@ -17,10 +17,9 @@
     <!--/contents/(mainContents:home)-->
     <a [routerLink]="['/contents',{outlets:{mainContents: ['home']}}]"><button mat-icon-button ><mat-icon>home</mat-icon></button></a>
     
-    <div class="bigTitleDiv"> SRE Work Shop</div>
+    <div class="bigTitleDiv">{{appTitle}}</div>
     
     <div class="headerRightNav">
         <button mat-icon-button (click)="openSettingsDialog()"><mat-icon>settings</mat-icon></button>
-        <button mat-button #platform (click)="openPlatformDialog()">{{curPlatform}}</button>
     </div>
 </div>

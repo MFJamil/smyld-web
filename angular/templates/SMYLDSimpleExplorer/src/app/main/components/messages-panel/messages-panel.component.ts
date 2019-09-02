@@ -29,7 +29,7 @@ export class MessagesPanelComponent implements OnInit,AfterViewInit,LogMessageLi
   }
 
   getMsgLogIcon(msg:LogMessage):string{
-    let iconFile = '/assets/'; 
+    let iconFile = '/assets/images/'; 
     switch(msg.type){
       case Type.Info:
         iconFile +='info_g_16.png';

@@ -8,12 +8,9 @@
 }*/
 
 export const environment = {
+  appTitle: 'SMYLD Simple Explorer',
   dryRun: true,
-  production:true,
-  certExpireWarnDuration:28,
-
-  svnJira: 'INT-44942'/*,
-  datasource: RunType.MockClient*/
+  production:true
 };
 
 /*

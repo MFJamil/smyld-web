@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,GAAG;EACZ,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;CAAG;;AACf,AAAA,UAAU,CAAC,cAAc,CAAC,aAAa,CAAC;EACpC,SAAS,EAAE,IAAI;CAAG",
-    "sources": [
-        "adapter-container.component.sass"
-    ],
-    "names": [],
-    "file": "adapter-container.component.css"
-}

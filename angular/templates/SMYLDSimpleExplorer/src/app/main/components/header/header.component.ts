@@ -3,11 +3,11 @@ import {  MatButton } from '@angular/material';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatDialogConfig} from '@angular/material/dialog';
 import { SideNavService, SideNavListener } from '../../services/side-nav.service';
 import { SettingsComponent } from '../settings/settings.component';
-import { PlatformService, Platform } from '../../services/platform.service';
 import {modules, Module} from '../../model/Module';
 import { ModuleName } from '../../services.enum';
 import { MessageService } from '../../services/message.service';
 import { LogUtils } from 'src/app/utils/LogUtils';
+import { environment } from 'src/environments/environment';
 
 export interface DialogData{
   curPlatform:string;
@@ -25,15 +25,14 @@ export interface DialogData{
 
 export class HeaderComponent implements OnInit,SideNavListener {
   @ViewChild ('platform',{static:false}) btnPlatform:MatButton;
-  curPlatform:Platform = this.platformService.platform;
   sideNavIcon:string = 'chevron_right';
   doHideNav:boolean = true;
+  appTitle :string = environment.appTitle;
   constructor(
     public dialog:MatDialog,
     public sideNavService:SideNavService,
     public messageService:MessageService,
-    private logger: LogUtils,
-    public platformService:PlatformService) { 
+    private logger: LogUtils) { 
     
   }
 
@@ -51,26 +50,9 @@ export class HeaderComponent implements OnInit,SideNavListener {
   }
 
   ngOnInit() {
-    this.platformService.doChangePlatform(Platform.Prod);
     this.sideNavService.addListener(this);
   }
 
-  openPlatformDialog():void{
-    const dialogRef = this.dialog.open(DialogPlatformSelector, {
-      width: '160px',
-      height: '100px',
-      data:{curPlatform:this.curPlatform}});
-      dialogRef.afterClosed().subscribe(result =>{
-        this.logger.debug('Dialog was closed with the result : ' + result);
-        if (result){
-          let  selectedPlatform:Platform = this.platformService.parsePlatform(result);
-          if (this.curPlatform!=selectedPlatform){
-            this.platformService.doChangePlatform(selectedPlatform);
-            this.curPlatform = selectedPlatform;
-          }
-        }
-      });
-  }
 
   openSettingsDialog():void{
     const dialogRef = this.dialog.open(SettingsComponent, {
@@ -97,23 +79,3 @@ export class HeaderComponent implements OnInit,SideNavListener {
 
 }
 
-@Component({
-  selector: 'dialog-platform-selector',
-  templateUrl: 'dialog-platform-selector.html'
-})
-
-export class DialogPlatformSelector implements OnInit{
-  constructor(public dialogRef:MatDialogRef<DialogPlatformSelector>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData){
-      
-    }
-    ngOnInit(){
-      this.dialogRef.updatePosition({ top: '60px', right: '0px' });
-    }
-    onNoClick():void{
-      this.dialogRef.close();
-    }
-    platformSelected(platformName:string){
-      this.dialogRef.close(platformName);
-    }
-}

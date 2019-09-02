@@ -1,10 +1,8 @@
 import {ModulePath,ModuleName} from '../services.enum';
-import { AdapterContainerComponent } from '../../modules/integration-adapters/components/adapter-container/adapter-container.component';
-import { IntegrationAdaptersExplorerComponent } from '../../modules/integration-adapters/components/integration-adapters-explorer/explorer.component';
-import { InvestigationContainerComponent } from '../../modules/investigation-tasks/components/investigation-container/investigation-container.component';
-import { InvestigationsExplorerComponent } from '../../modules/investigation-tasks/components/investigations-explorer/investigations-explorer.component';
-import { MiscellaneousContainerComponent } from '../../modules/miscellaneous/components/miscellaneous-container/miscellaneous-container.component';
-import { MiscellaneousExplorerComponent } from '../../modules/miscellaneous/components/miscellaneous-explorer/miscellaneous-explorer.component';
+import { Module1ContainerComponent } from '../../modules/module1/components/container/module1-container.component';
+import { Module1ExplorerComponent } from '../../modules/module1/components/explorer/module1-explorer.component';
+import { Module2ContainerComponent } from '../../modules/module2/components/container/module2-container.component';
+import { Module2ExplorerComponent } from '../../modules/module2/components/explorer/module2-explorer.component';
 
 
 
@@ -17,23 +15,17 @@ export class Module {
 
 export const modules: Module[]=[
     {
-        name: ModuleName.IntegrationAdapters,
-        path: ModulePath.integrationAdapters,
-        mainComponent: <any>AdapterContainerComponent,
-        sideComponent: <any>IntegrationAdaptersExplorerComponent
-    },
-    {
-        name:ModuleName.InvestigationTasks,
+        name:'Module 1',
         path:ModulePath.investigationTasks,
-        mainComponent: <any>InvestigationContainerComponent,
-        sideComponent: <any>InvestigationsExplorerComponent
+        mainComponent: <any>Module1ContainerComponent,
+        sideComponent: <any>Module1ExplorerComponent
 
     },
     {
-        name: ModuleName.Miscellaneous,
+        name: 'Module 2',
         path: ModulePath.miscellaneous,
-        mainComponent: <any>MiscellaneousContainerComponent,
-        sideComponent: <any>MiscellaneousExplorerComponent
+        mainComponent: <any>Module2ContainerComponent,
+        sideComponent: <any>Module2ExplorerComponent
 
     }
 

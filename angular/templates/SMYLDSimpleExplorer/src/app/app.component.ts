@@ -20,7 +20,7 @@ export class AppComponent implements AfterViewInit,OnInit {
   @ViewChild('sidenav',{static:false}) sidenav:MatSidenav;
   reason = '';
 
-  title = 'SREWorkShop';
+  title = 'SMYLD Simple Explorer';
   serverMessage = 'No message was received from the server';
   selectedValue: string="";
   items = [
@@ -69,10 +69,9 @@ export class AppComponent implements AfterViewInit,OnInit {
   printEnvironment(){
     
     this.logger.log(" ==================  Environment ===================");
-    console.log("Dry Run                          : " + environment.dryRun );
-    console.log("Production                       : " + environment.production );
-    console.log("Svn Jira                         : " + environment.svnJira );
-    console.log("Cert Expiration Warning Period   : " + environment.certExpireWarnDuration );
+    console.log("Application Title    : " + environment.appTitle );
+    console.log("Dry Run              : " + environment.dryRun );
+    console.log("Production           : " + environment.production );
     console.log(" ====================================================");
     
 
