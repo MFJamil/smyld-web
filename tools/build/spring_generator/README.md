@@ -51,6 +51,11 @@ The resultant startup page will display the message out of the code snippet abov
 
 ![Spring / Angular page](https://github.com/MFJamil/SMYLD/blob/master/documents/images/spring_angular_page.png)
 
+Similarly issuing the same command for Vue framework will create the page as seen below:
+![Spring / Angular page](https://github.com/MFJamil/SMYLD/blob/master/documents/images/spring_vue_page.png)
+and below how the startup page for React will look like:
+![Spring / Angular page](https://github.com/MFJamil/SMYLD/blob/master/documents/images/spring_react_page.png)
+
 
 The same applies for the other two frameworks (i.e. React and Vue), however the APIs used will be different.
 _It is important to note that the generated frontends are all written in Typescript!_
@@ -58,6 +63,6 @@ _It is important to note that the generated frontends are all written in Typescr
 ---
 
 ## Contributors notice
-Feel free to extend the generator. The maven functionality allow you to template the created folders, the created file name as well as the created file contents. Take a look at the already available templates to have an idea on how it is created.
+Feel free to extend the generator. The python functionality allow you to template the created folders, the created file name as well as the created file contents. Take a look at the already available templates to have an idea on how it is created.
 
 
