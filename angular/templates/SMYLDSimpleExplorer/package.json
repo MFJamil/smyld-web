@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200",
-    "build": "ng build --prod --output-path ../backend/src/main/resources/public",
+    "build": "ng build --prod --output-path demo/public",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
