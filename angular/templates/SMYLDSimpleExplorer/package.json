@@ -1,10 +1,10 @@
 {
-  "name": "SREWorkShop",
+  "name": "SMYLDSimpleExplorer",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200",
-    "build": "ng build --prod --output-path demo/public",
+    "build": "ng build --prod --output-path ../../../demo/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

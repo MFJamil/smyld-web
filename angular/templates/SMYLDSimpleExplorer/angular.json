@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SREWorkShop": {
+    "SMYLDSimpleExplorer": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/SREWorkShop",
+            "outputPath": "dist/SMYLDSimpleExplorer",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SREWorkShop:build"
+            "browserTarget": "SMYLDSimpleExplorer:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "SREWorkShop:build:production"
+              "browserTarget": "SMYLDSimpleExplorer:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SREWorkShop:build"
+            "browserTarget": "SMYLDSimpleExplorer:build"
           }
         },
         "test": {
@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "SREWorkShop:serve"
+            "devServerTarget": "SMYLDSimpleExplorer:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "SREWorkShop:serve:production"
+              "devServerTarget": "SMYLDSimpleExplorer:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "SREWorkShop"
+  "defaultProject": "SMYLDSimpleExplorer"
 }
