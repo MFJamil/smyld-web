@@ -1,0 +1,22 @@
+
+
+<div *ngIf="adapter; else ShowNoneSelected">
+    <div class="cont-title">Adapter {{adapter.name}}
+    <mat-tab-group>
+        
+        <!-- Different Adpater modules can be extended here-->
+        <mat-tab >
+            <ng-template mat-tab-label class="tab-title">
+                <img src="assets/key_2_16.png" class="tab-title-icon"> <b style="font-size: 16px;">Keys Manager</b>
+            </ng-template>
+            <app-module-keystore [adapter]="adapter"></app-module-keystore> 
+        </mat-tab>
+
+    </mat-tab-group>
+        
+    </div>
+</div>
+<ng-template #ShowNoneSelected>
+    <div class="big_warning centerItem blinking" style="width:800px; height:200px;"> << Please select Adapter from the side navigation panel</div>
+
+</ng-template>

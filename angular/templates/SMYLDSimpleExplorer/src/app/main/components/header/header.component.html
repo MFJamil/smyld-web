@@ -1,0 +1,26 @@
+<div class="mainNavCnt">
+    
+    <div [hidden]="doHideNav">
+        <button mat-icon-button   (click)="toggetSideNav()" ><mat-icon >{{sideNavIcon}}</mat-icon></button>
+    </div>
+    <!--button mat-icon-button ><mat-icon>reorder</mat-icon></button>-->
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="main_menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+       <button *ngFor="let module of moduleList()" mat-menu-item>
+            <mat-icon >storage</mat-icon>
+            <span [routerLink]="['/contents', {outlets:{ mainContents: [module.path],sideContents:[module.path]}}]" class="menu_item">{{module.name}}</span>  
+        </button>
+      </mat-menu>
+      
+    <!--/contents/(mainContents:home)-->
+    <a [routerLink]="['/contents',{outlets:{mainContents: ['home']}}]"><button mat-icon-button ><mat-icon>home</mat-icon></button></a>
+    
+    <div class="bigTitleDiv"> SRE Work Shop</div>
+    
+    <div class="headerRightNav">
+        <button mat-icon-button (click)="openSettingsDialog()"><mat-icon>settings</mat-icon></button>
+        <button mat-button #platform (click)="openPlatformDialog()">{{curPlatform}}</button>
+    </div>
+</div>

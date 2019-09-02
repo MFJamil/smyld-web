@@ -1,0 +1,15 @@
+
+
+
+<div id="messsages_container"  #msgPanel>
+    <div id="pinDiv" (mouseover)="showMessagesPanel()" ><img style="position:relative; padding-right: 4px;left:-15px; top: 4px;" src="/assets/top.png" #pinEl>{{messages.length}}</div>    
+    <div id="messages_page">
+        <div *ngFor="let message of messages">
+                <img style="position: relative;top: 4px;padding-right: 8px;" src="{{getMsgLogIcon(message)}}"> 
+                <span style="color:blue;">{{message.date|date:'y-MM-dd_HH:mm:ss'}}</span> {{message.text}}
+        </div>
+    </div>
+    <div style="padding-top: 80px;"></div>
+
+</div>
+<div style="padding-top: 80px;"></div>  

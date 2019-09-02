@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainDiv {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.explorer-container {
+  width: 250px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00008b), color-stop(#5843ab), color-stop(#8f7fc9), color-stop(#c6bee5), to(#ffffff));
+  background-image: linear-gradient(to bottom, #00008b, #5843ab, #8f7fc9, #c6bee5, #ffffff);
+}
+/*# sourceMappingURL=contents.component.css.map */

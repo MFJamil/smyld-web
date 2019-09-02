@@ -1,0 +1,9 @@
+<div class="MainDiv">
+    <div *ngFor="let module of moduleList()" class="Module">
+        <a [routerLink]="['/contents', {outlets:{ mainContents: [module.path],sideContents:[module.path]}}]">{{module.name}}</a>
+        <mat-icon class="Module_icon">storage</mat-icon>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,16 @@
+<mat-tab-group>
+    <!-- Different Settings can be extended here-->
+    <mat-tab  >
+        <ng-template mat-tab-label>
+            <button mat-icon-button><mat-icon>format_color_fill</mat-icon></button>
+        </ng-template>
+        <div class="opened">
+            <div class="colorsDiv">
+                <div *ngFor="let curColor of bgColors" (click)="setBGTheme(curColor)" class="circle" [ngStyle]="{'background': curColor}"></div>
+            </div>
+        </div>
+        
+    </mat-tab>
+
+</mat-tab-group>
+      

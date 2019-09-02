@@ -1,0 +1,49 @@
+
+
+<div class="container">
+<h3 class="cont_title" >Adapters Pending changes </h3>
+
+<table>
+    <tr>
+        <td class="title_cell">Adapter</td>
+        <td class="title_cell">File</td>
+        <td class="title_cell">Message</td>
+        <td class="title_cell"></td>
+
+    </tr>
+    <tr *ngFor="let change of changes; let i = index" class="change_row">
+        <td class="change_cell adapter">{{change.adapter.name}}</td> 
+        <td class="change_cell file">{{change.file.name}}</td>
+        <td class="change_cell" >{{change.message}}</td>
+        <td class="change_cell">
+            <table>
+                <tr>
+                    <td ><button mat-icon-button (click)="editMessage(change)"><mat-icon>edit</mat-icon></button></td>
+                    <td ><button mat-icon-button (click)="deleteChange(i)"><mat-icon>delete</mat-icon></button></td>
+                    <td ><button mat-icon-button (click)="rollbackChange(i)" ><mat-icon>undo</mat-icon></button></td>
+                    <td ><button mat-icon-button (click)="commitChange(i)" ><mat-icon>done</mat-icon></button></td>
+                </tr>
+            
+            </table>
+            
+        </td>
+    </tr>
+
+</table>
+
+<table>
+    <tr>
+        <td><button mat-icon-button (click)="commitAll()"><mat-icon>done_all</mat-icon></button></td>
+        <td>Commit All</td>
+
+        <td style="padding-left: 30px;"><button mat-icon-button (click)="rollbackAll()"><mat-icon>undo</mat-icon></button></td>
+        <td>Rollback All</td>
+
+        
+        <td style="padding-left: 30px;"><button mat-icon-button (click)="deleteAll()"><mat-icon>delete</mat-icon></button></td>
+        <td>Delete All</td>
+
+    </tr>    
+</table>
+<div style="padding-top: 80px;"></div>
+</div>

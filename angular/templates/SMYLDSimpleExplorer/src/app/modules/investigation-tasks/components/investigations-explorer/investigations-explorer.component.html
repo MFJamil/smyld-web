@@ -1,0 +1,13 @@
+<mat-accordion >
+    
+        <mat-expansion-panel class="explorer-main" *ngFor="let taskGroup of tasks">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="exp-title">
+                  <img src="assets/magnify_16.png" class="exp-title-icon"> {{taskGroup.title}}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div *ngFor="let task of taskGroup.list" class="exp-item"><a class="adapter-link">{{task}}</a></div> 
+        </mat-expansion-panel>
+        
+    </mat-accordion>
+    

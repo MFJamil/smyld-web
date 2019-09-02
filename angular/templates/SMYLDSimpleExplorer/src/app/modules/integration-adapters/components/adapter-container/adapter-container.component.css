@@ -1,0 +1,10 @@
+.tab-title-icon {
+  padding: 5px;
+  position: relative;
+  top: 0px;
+}
+
+.tab-title .mat-tab-label .mat-tab-link {
+  font-size: 22px;
+}
+/*# sourceMappingURL=adapter-container.component.css.map */

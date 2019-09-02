@@ -1,0 +1,42 @@
+@import '../../../../styles'
+.mainNavCnt
+    left: 0px
+    align-items: center
+    background-color: var(--nav-bg)
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.32)
+    display: flex
+    position: fixed
+    color: white
+    width: 100%
+    top: 0px
+    padding: 15px
+    height: 60px
+    z-index: 5
+
+a
+    color: white
+
+.bigTitleDiv
+    @extend %niceTitle
+    width: 200px
+    text-align: center
+    margin: auto
+    font-size: 20px
+
+.headerRightNav
+    @extend %niceTitle
+    position: absolute
+    margin: auto
+    right: 0px
+    font-size: 12px
+.header-theme .mat-select
+    color: white
+.platformBtn
+    height: 10px
+
+.main_menu
+    user-select: none
+.menu_item 
+    color: black
+.menu_item:hover
+    color: red

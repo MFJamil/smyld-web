@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+$icons-color: white
+:root
+    --nav-bg: #4c71b1
+$nav-bg: var(--nav-bg)
+
+
+.inv_cert 
+    color: orange !important
+.cfg_err
+    color: red !important
+%niceTitle
+    color: white
+    font-family: Roboto,"Helvetica Neue",sans-serif
+    font-weight: 500
+
+%title_1
+    font-size: 22px
+    font-style: italic
+    font-weight: 800
+    font-family: 'Lato','Open Sans','Helvetica Neue','Arial','San-serif'
+
+
+.centerItem
+    position: absolute
+    margin: auto
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+.big_warning 
+    @extend %title_1
+    color: red
+    overflow: hidden !important
+
+.blinking 
+    animation: blinker 3s linear infinite
+
+@keyframes blinker   
+    50% 
+        opacity: 0
+        color: gray
+        right: -250px
+
+*
+    box-sizing: border-box
+
+a:link
+    text-decoration: none
+
+a:visited
+    text-decoration: none
+    
+a:hover
+    text-decoration: none
+    cursor: pointer
+    color: red
+
+::ng-deep 
+    .mat-input-element 
+        caret-color: var(--nav-bg) 
+    .mat-ink-bar 
+        background-color: var(--nav-bg) !important
+    .mat-form-field.mat-focused 
+        .mat-form-field-label 
+            color: var(--nav-bg)
+        .mat-form-field-ripple
+            background-color: var(--nav-bg) 
+    .mat-tab-body-content
+        overflow: hidden
+    .mat-tab-body-group
+        overflow: hidden
+        

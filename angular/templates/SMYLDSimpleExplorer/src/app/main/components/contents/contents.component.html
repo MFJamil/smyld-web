@@ -1,0 +1,41 @@
+<div class="mainDiv">
+    <mat-sidenav-container class="main-container" >
+        <mat-sidenav #appSideNav class="explorer-container" mode="side" >
+                <router-outlet name="sideContents"></router-outlet>
+                <!--<app-integration-adapters-explorer></app-integration-adapters-explorer>-->
+        </mat-sidenav>
+            
+
+        <mat-sidenav-content>
+            <router-outlet name="mainContents"></router-outlet>
+            <!--
+            <div *ngIf="module.name = ModuleName.">
+                <app-adapter-container [adapter]="adapter"></app-adapter-container>
+            </div>
+            
+
+            <div [ngSwitch]="getActiveModuleName()">
+                <template *ngSwitchCase="'Integration Adapters'">
+                    <app-adapter-container [adapter]="adapter"></app-adapter-container>
+                </template>
+                <app-home-page *ngSwitchDefault></app-home-page>
+            </div>
+
+        -->
+            <!--
+            <div [ngSwitch]="activeModule.name">
+                <app-adapter-container *ngSwitchCase="Integration Adapters" [adapter]="adapter"></app-adapter-container>
+                <div *ngSwitchCase="Investigation Tasks" >
+                    Investigation Tasks still under development ......
+                </div>
+                <app-home-page *ngSwitchDefault></app-home-page>
+            </div>
+
+        <app-home-page></app-home-page>
+        -->
+        
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+    <app-messages-panel></app-messages-panel>
+</div>
+

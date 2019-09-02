@@ -1,0 +1,50 @@
+@import '../../../../styles'
+.MainDiv
+    position: absolute
+    left: 50%
+    width: 80%
+    height: 80%
+    top: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    padding: 50px
+    box-sizing: border-box
+.Module
+    @extend %title_1
+    color: $nav-bg
+    width: 250px
+    height: 100px
+    box-shadow: 4px 4px 6px silver
+    border-radius: 8px
+    text-align: center
+    vertical-align: middle
+    line-height: 100px
+    right: 40px
+    position: relative
+    border: 1px solid #eee
+.Module a:link
+    text-decoration: none
+    color: $nav-bg
+
+.Module a:visited
+    text-decoration: none
+    color: $nav-bg
+
+
+.Module a:hover
+    text-decoration: none
+    color: red
+
+
+.Module:hover
+    color: red
+    cursor: pointer
+    background-color: light-gray 
+
+.Module_icon
+    position: absolute
+    top: 8px
+    left: 10%
+    
