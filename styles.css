@@ -1,0 +1,11 @@
+@font-face{
+    font-family: "SMYLD-Digital";
+    src: url('fonts/SansCulottes.ttf');
+
+
+}
+
+#mainPageTitle{
+    font-family: SMYLD-Digital;
+
+}
