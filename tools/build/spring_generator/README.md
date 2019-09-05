@@ -74,10 +74,10 @@ docker run --user $(id -u):$(id -g) -v [Your projects path]:/project smyld/tools
 
 
 You need to pay special care for the command arguments above, only replace the values inside the big brackets with what you need. The command above will create Angular in the frontend and will place the created project folder in the given path. 
---user if the user parameter is not provided, the project will be created as root and that will cause the developer to always supply the command as the root and this will affect the building of the project. This is due to the fact that the docker will be installed only as a root.
--v this argument will link the host path (your local path) to the path of the container, you can pick the path you want on your machine, however, ":/project" should remain the same, since the container will write the created project to that path inside of the container which will be updating the host given path automatically.
-smyld/tools_build:spring_generato is the container address.
-The rest of arguments are the same defined for this script except the argument "d" which is removed, since the path is already specified via the "v" argument already.
+  * --user if the user parameter is not provided, the project will be created as root and that will cause the developer to always supply the command as the root and this will affect the building of the project. This is due to the fact that the docker will be installed only as a root.
+  * -v this argument will link the host path (your local path) to the path of the container, you can pick the path you want on your machine, however, ":/project" should remain the same, since the container will write the created project to that path inside of the container which will be updating the host given path automatically.
+  * smyld/tools_build:spring_generato is the container address.
+  * The rest of arguments are the same defined for this script except the argument "d" which is removed, since the path is already specified via the "v" argument already.
 
 ### Example
 ```shell
