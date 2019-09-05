@@ -49,12 +49,12 @@ usage: springGenerator.py [-h] [-t {angular,vue,react}] -n NAME -g GROUP
 
 The resultant startup page will display the message out of the code snippet above can be seen below:
 
-![Spring / Angular page](https://github.com/MFJamil/SMYLD/documents/images/spring_angular_page.png)
+![Spring / Angular page](images/spring_angular_page.png)
 
 Similarly issuing the same command for Vue framework will create the page as seen below:
-![Spring / Angular page](https://github.com/MFJamil/SMYLD/blob/master/documents/images/spring_vue_page.png)
+![Spring / Angular page](images/spring_vue_page.png)
 and below how the startup page for React will look like:
-![Spring / Angular page](https://github.com/MFJamil/SMYLD/blob/master/documents/images/spring_react_page.png)
+![Spring / Angular page](images/spring_react_page.png)
 
 
 The same applies for the other two frameworks (i.e. React and Vue), however the APIs used will be different.
