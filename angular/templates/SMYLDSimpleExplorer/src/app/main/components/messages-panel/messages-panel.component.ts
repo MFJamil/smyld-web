@@ -55,7 +55,7 @@ export class MessagesPanelComponent implements OnInit,AfterViewInit,LogMessageLi
   public showMessagesPanel():void{
     this.panelEl.nativeElement.style.bottom = this.panelVisible?'-250px':'60px';
     this.panelEl.nativeElement.style.opacity = this.panelVisible?'0.2':'1';
-    this.pinEl.nativeElement.src = '/assets/' + (this.panelVisible?'top.png':'down.png');
+    this.pinEl.nativeElement.src = '/assets/images/' + (this.panelVisible?'top.png':'down.png');
     this.panelVisible =!this.panelVisible;
   }
 

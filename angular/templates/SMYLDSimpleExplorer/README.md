@@ -1,6 +1,6 @@
-# NewTemplate
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+# SMYLD Angular Simple Explorer template
+This angular template can be used by developers to speed up creating a new project. The template looks like below:
+![Template Explorer Page](images/templateView1.png)
 
 ## Development server
 
