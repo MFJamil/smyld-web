@@ -1,4 +1,4 @@
-# SMYLD Angular Simple Explorer template
+# Angular Simple Explorer template
 
 
 The Simple Explorer Template is created using Angular 8 and Angular Material library. 
