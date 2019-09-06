@@ -34,12 +34,13 @@ a:hover{
 
 .app_group{
     width: 400px;
-    height: 200px;
+    /*height: 200px;*/
     box-shadow: 4px 4px 6px silver;
     border-radius: 8px;
     border: 1px solid #eee;
     font-weight: bold;
     margin-left: auto; margin-right: auto;
+    padding: 20px;
 
 
 }
@@ -47,7 +48,7 @@ a:hover{
 .group_icon{
     position: relative;
     right: 120px;
-    top: -20px;
+    top: -40px;
 
 }
 #contentsDiv{
