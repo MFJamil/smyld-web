@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from 'src/app/main/services/message.service';
 
 @Component({
   selector: 'app-module1-container',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Module1ContainerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private logger:MessageService) { }
 
   ngOnInit() {
+    this.logger.info("Module 1 successfully initialized ....");
   }
 
 }

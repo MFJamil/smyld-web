@@ -22,3 +22,9 @@ the theme color can be updated, although this looks simple but it updates angula
 
 ![Template With different Theme](images/template_with_theme.png)
 
+### Messages Panel
+
+The template includes a messages panel that shows the different logging messages categorized as (INFO, ERROR and WARNING), each will be displayed with a proper icon. The messages panel is shown at the bottom of the screen and with hovering the mouse over it, will fade in and slide upwards to show the messages, upon another hovering of the mouse the panel will go back to its place.
+
+
+![Explorer Messages Panel](images/explorerMessagePanel.ogv)
