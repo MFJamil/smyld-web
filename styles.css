@@ -40,15 +40,23 @@ a:hover{
     border: 1px solid #eee;
     font-weight: bold;
     margin-left: auto; margin-right: auto;
-    padding: 20px;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
 
 
 }
+.app_group li {
+    position: relative;
+    top: -15px;
+    
 
+
+}
 .group_icon{
     position: relative;
-    right: 120px;
-    top: -40px;
+    right: 150px;
+    top: -25px;
 
 }
 #contentsDiv{
