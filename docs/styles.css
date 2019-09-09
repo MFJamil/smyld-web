@@ -26,7 +26,11 @@ body{
     
 
 #mainPageTitle{
-    font-family: SMYLD-Digital;
+    /*font-family: SMYLD-Digital;*/
+    font-family:Arial; 
+    font-size: 26px; 
+    font-weight: bold; 
+    line-height: 32px;
     background-image:linear-gradient(to right, #2a6099, #f10d0c, #127622, #e1b228);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
