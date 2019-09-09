@@ -34,8 +34,7 @@ a:hover{
 
 .app_group{
     width: 400px;
-    /*height: 200px;*/
-    box-shadow: 4px 4px 6px silver;
+    /*box-shadow: 4px 4px 6px silver;*/
     border-radius: 8px;
     border: 1px solid #eee;
     font-weight: bold;
