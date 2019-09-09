@@ -27,7 +27,7 @@ body{
 
 #mainPageTitle{
     /*font-family: SMYLD-Digital;*/
-    font-family:Arial; 
+    font-family: Roboto, sans-serif; 
     font-size: 26px; 
     font-weight: bold; 
     line-height: 32px;
@@ -41,9 +41,8 @@ a,a:visited{
     font-family: SMYLD-Digital;
     padding: 20px;
     color:black;
-
-
 }
+
 a:hover{
     color:red;
 }
@@ -58,11 +57,15 @@ a:hover{
     padding: 10px;
     vertical-align: middle;
     text-align: center;
+}
+
+.app_group_title{
+    font-family: Roboto, sans-serif;
+    color:#1d9add;
+    padding: 10px;
 
 
 }
-
-
  /*
 .app_group li {
     position: relative;
