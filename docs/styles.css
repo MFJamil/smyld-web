@@ -1,0 +1,74 @@
+@font-face{
+    font-family: "SMYLD-Digital";
+    src: url('fonts/digital-7.ttf');
+
+
+}
+
+body{
+    text-align: center;
+
+}
+
+*{
+
+    box-sizing: border-box;
+}
+    
+
+#mainPageTitle{
+    font-family: SMYLD-Digital;
+
+}
+
+a{
+    text-decoration: none;
+    font-family: SMYLD-Digital;
+    padding: 20px;
+
+}
+a:hover{
+    color:red;
+
+}
+
+.app_group{
+    width: 400px;
+    /*height: 200px;*/
+    box-shadow: 4px 4px 6px silver;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-weight: bold;
+    margin-left: auto; margin-right: auto;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+
+
+}
+.app_group li {
+    position: relative;
+    top: -15px;
+    
+
+
+}
+.group_icon{
+    position: relative;
+    right: 150px;
+    top: -25px;
+
+}
+#contentsDiv{
+    margin-left: auto; margin-right: auto;
+
+}
+#contentsTable{
+    margin-left: auto; margin-right: auto;
+    text-align: center;
+    width: 80%;
+    padding-top: 40px;
+}
+#contentsTable td{
+
+}
