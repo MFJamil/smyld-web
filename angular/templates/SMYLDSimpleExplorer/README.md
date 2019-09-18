@@ -28,3 +28,12 @@ The template includes a messages panel that shows the different logging messages
 
 
 [ >>>> Go To Show Case <<<< ](https://www.youtube.com/watch?v=aaCTbyGFfxE&feature=youtu.be)
+
+
+### Developer's question : How to use ?
+#### Using Github
+You can issue the github command as shown below:
+
+#### Without Github
+In order to use the template, you need to download the folder
+ 
