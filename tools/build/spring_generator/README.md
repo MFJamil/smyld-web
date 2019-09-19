@@ -83,3 +83,22 @@ docker run --user $(id -u):$(id -g) -v ~/Documents/temp:/project smyld/tools_bui
 ```
 The command above will create Angular frontend project with the name "AngCustomer" that will be placed under "Documents/temp" folder as a folder named "AngCustomer" and will be referenced in Spring Boot with the package "com.smyld.apps".
 
+
+
+## Downloading the script
+Since Github does not support the direct download of a specific folder in the repository but provides the clone for the whole repository, we can not download this template without cloning the whole respository which is not unwieldy. 
+However there are several ways to get around that, as shown below:
+
+##### via Subversion!
+Yes! via Subversion this is possible, just run the following command below:
+``` bash
+svn co https://github.com/MFJamil/smyld/trunk/tools/build/spring_generator
+```
+_Requires having subversion installed_
+##### via Codeload!
+Another way of filtering out the repository via the codeload link, just run the following command below:
+``` bash
+curl https://codeload.github.com/mfjamil/smyld/tar.gz/master | tar -xz --strip=3 smyld-master/tools/build/spring_generator
+```
+
+_Requires having curl and tar installed_
