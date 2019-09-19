@@ -158,7 +158,45 @@ In order to start coding your module to use the template, there are an already t
 
 ```
 
-However, the components will not be automatically placed like this.
+**However, the components will not be automatically placed like this!**
+
+The above structure of folders for the modules as well as the naming of components was only for having a clean structure to speed up onboarding process for the developers, nevertheless the real integration of the modules that will be handled by the template can be found on "src/app/main/model/Module.ts" file.
+  Below is the complete source code of this module that is basically holding all the modules declaration:
+  
+
+```typescript
+import { Module1ContainerComponent } from '../../modules/module1/components/container/module1-container.component';
+import { Module1ExplorerComponent } from '../../modules/module1/components/explorer/module1-explorer.component';
+import { Module2ContainerComponent } from '../../modules/module2/components/container/module2-container.component';
+import { Module2ExplorerComponent } from '../../modules/module2/components/explorer/module2-explorer.component';
 
 
-_To be Continued_
+
+export class Module {
+    name: string;
+    path: string;
+    mainComponent: any;
+    sideComponent: any;
+}
+
+export const modules: Module[]=[
+    {
+        name:'Module 1',
+        path:'openModule1',
+        mainComponent: <any>Module1ContainerComponent,
+        sideComponent: <any>Module1ExplorerComponent
+
+    },
+    {
+        name: 'Module 2',
+        path: 'openModule2',
+        mainComponent: <any>Module2ContainerComponent,
+        sideComponent: <any>Module2ExplorerComponent
+
+    }
+
+];
+```
+The code is self explanatory about what each field  
+
+_**To be Continued**_
