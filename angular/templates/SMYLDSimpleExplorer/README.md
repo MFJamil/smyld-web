@@ -31,14 +31,22 @@ The template includes a messages panel that shows the different logging messages
 
 
 ### Developer's question : How to use it?
-#### Using Github
-You can issue the github command as shown below:
 
 
-_To be Continued_
+#### 1 - Downloading the template
+Since Github does not support the direct download of a specific folder in the repository but provides the clone for the whole repository, we can not download this template without cloning the whole respository which is not unwieldy. 
+However there are several ways to get around that, as shown below:
 
-#### Without Github
-In order to use the template, you need to download the folder : 
+##### via Subversion!
+Yes! via Subversion this is possible, just run the following command below:
+``` Shell
+svn co https://github.com/MFJamil/smyld/trunk/angular/templates/SMYLDSimpleExplorer
+```
+##### via Codeload!
+Another way of filtering out the repository via the codeload link, just run the following command below:
+``` Shell
+curl https://codeload.github.com/mfjamil/smyld/tar.gz/master | tar -xz --strip=3 smyld-master/angular/templates/SMYLDSimpleExplorer
+```
 
 
 
