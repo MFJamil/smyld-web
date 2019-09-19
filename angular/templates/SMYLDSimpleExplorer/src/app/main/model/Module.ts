@@ -1,4 +1,3 @@
-import {ModulePath,ModuleName} from '../services.enum';
 import { Module1ContainerComponent } from '../../modules/module1/components/container/module1-container.component';
 import { Module1ExplorerComponent } from '../../modules/module1/components/explorer/module1-explorer.component';
 import { Module2ContainerComponent } from '../../modules/module2/components/container/module2-container.component';
@@ -16,14 +15,14 @@ export class Module {
 export const modules: Module[]=[
     {
         name:'Module 1',
-        path:ModulePath.investigationTasks,
+        path:'openModule1',
         mainComponent: <any>Module1ContainerComponent,
         sideComponent: <any>Module1ExplorerComponent
 
     },
     {
         name: 'Module 2',
-        path: ModulePath.miscellaneous,
+        path: 'openModule2',
         mainComponent: <any>Module2ContainerComponent,
         sideComponent: <any>Module2ExplorerComponent
 

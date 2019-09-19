@@ -1,7 +1,6 @@
   import { NgModule } from '@angular/core';
 import { Routes, RouterModule, Router,Route } from '@angular/router';
 import { ContentsComponent } from './components/contents/contents.component';
-import { ModulePath, ModuleName } from './services.enum';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { modules } from '../main/model/Module';
 import { RoutingUtils } from '../utils/RoutingUtils';
@@ -14,7 +13,7 @@ const routes: Routes = [
     component: ContentsComponent,
     children:[
       { 
-        path: ModulePath.home, 
+        path: 'home', 
         component: HomePageComponent,
         outlet: 'mainContents',
         pathMatch: 'full'
@@ -40,7 +39,7 @@ export class ContentsRoutingModule {
   }
 
   populateModuleRoutes(route: Route){
-    modules.filter(mod => mod.name!=ModuleName.Home).forEach(curModule =>{
+    modules.filter(mod => mod.name!='home').forEach(curModule =>{
       const mainRoute = {
         path: curModule.path,
         component: <any>curModule.mainComponent,

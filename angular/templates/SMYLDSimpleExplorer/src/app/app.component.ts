@@ -3,7 +3,6 @@ import {HttpClient} from '@angular/common/http';
 import { MatSidenav } from '@angular/material';
 import { Router,Route } from '@angular/router';
 import { modules } from './main/model/Module';
-import { ModuleName } from './main/services.enum';
 import { environment } from 'src/environments/environment';
 import { MessageService } from './main/services/message.service';
 import { Type } from './utils/logMessage';
@@ -41,7 +40,7 @@ export class AppComponent implements AfterViewInit,OnInit {
 
 
   populateModuleRoutes(route: Route){
-    modules.filter(mod => mod.name!=ModuleName.Home).forEach(curModule =>{
+    modules.filter(mod => mod.name!='home').forEach(curModule =>{
       const mainRoute = {
         path: curModule.path,
         component: <any>curModule.mainComponent,

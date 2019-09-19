@@ -4,7 +4,6 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatDialogConfig} from '@angula
 import { SideNavService, SideNavListener } from '../../services/side-nav.service';
 import { SettingsComponent } from '../settings/settings.component';
 import {modules, Module} from '../../model/Module';
-import { ModuleName } from '../../services.enum';
 import { MessageService } from '../../services/message.service';
 import { LogUtils } from 'src/app/utils/LogUtils';
 import { environment } from 'src/environments/environment';
@@ -45,7 +44,7 @@ export class HeaderComponent implements OnInit,SideNavListener {
 
 
   moduleList():Module[]{
-    return modules.filter(curModule => curModule.name!=ModuleName.Home);
+    return modules.filter(curModule => curModule.name!='home');
 
   }
 

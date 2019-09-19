@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {modules, Module} from '../../model/Module';
-import { ModuleName } from '../../services.enum';
 
 @Component({
   selector: 'app-home-page',
@@ -14,7 +13,7 @@ export class HomePageComponent implements OnInit {
    }
 
   moduleList():Module[]{
-    return modules.filter(curModule => curModule.name!=ModuleName.Home);
+    return modules.filter(curModule => curModule.name!='home');
 
   }
 
