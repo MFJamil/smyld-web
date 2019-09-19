@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router'
 import { AppRoutingModule } from './app-routing.module';
-import { ContentsRoutingModule} from './main/contents-routing.module'
+import { ContentsRoutingModule} from './main/contents-routing.module';
+import { Module1Routings} from './modules/module1/module1-routings.module';
+
 import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -60,6 +62,7 @@ import {DatePipe} from '@angular/common';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
+    Module1Routings,
     ContentsRoutingModule,
     BrowserAnimationsModule,
     FormsModule,

@@ -6,7 +6,8 @@
                   <img src="assets/images/magnify_16.png" class="exp-title-icon"> {{taskGroup.title}}
                 </mat-panel-title>
             </mat-expansion-panel-header>
-            <div *ngFor="let task of taskGroup.list" class="exp-item"><a class="adapter-link">{{task}}</a></div> 
+            <div *ngFor="let task of taskGroup.list" class="exp-item">
+                <a class="adapter-link" [routerLink]="['/contents', {outlets: {mainContents: ['item',task]}}]" >{{task}}</a></div> 
         </mat-expansion-panel>
         
     </mat-accordion>
