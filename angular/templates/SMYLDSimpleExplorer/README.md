@@ -69,6 +69,7 @@ _Requires having angular client installed, preferably version 8_
 To test the template you need to open the browser and type "localhost:4200"
 
 #### 5 - Start coding
+##### a - Adding module
 In order to start coding your module to use the template, there are an already two place holder modules inside the code, that you can use as a sample for how to integrate your work. After opening the template with your preferred editor (I do use Visual Code), the source code is divided in a clear way to show where to integrate the code, the usual folder that hosts the source code is "src/app", the place holder modules are defined under a folder called "modules", so the path to the modules is "src/app/modules". You will notice that each module contains two subfolers hosting the two different components for each module, one is called "container" and the other one is called "explorer", the Container component is to be placed in the main page while the explorer will be placed on the left, see the source folder contents shown below: 
 
 ``` diff
@@ -199,6 +200,56 @@ export const modules: Module[]=[
 ```
 The code is self explanatory about what each field is pointing to.
 
+##### b - Adding routing
+The template handles the routing for the new added modules via injecting them into the main routing module **dynamically**. To have an idea about this mechanism, take a look at the sample module for Module1. Under the path "src/app/modules/module1/module1-routings.module.ts". The code for this module is shown below:
+``` typescript
+import { NgModule } from '@angular/core';
+import { Routes, Router,Route } from '@angular/router';
+import { RoutingUtils } from 'src/app/utils/RoutingUtils';
+import { Module1ContainerComponent } from './components/container/module1-container.component';
 
+
+// Below Routers are injected "dynamically" as children under "contents" path
+const moduleRoutes: Routes = [
+  {
+    path:'item/:name', 
+    component: Module1ContainerComponent,
+    outlet: 'mainContents',
+    pathMatch: 'full'
+  }
+
+];
+
+@NgModule({
+  imports: [
+    
+  ],
+  exports: [],
+  declarations: []
+})
+export class Module1Routings { 
+  constructor(private router:Router,
+    private routingUtils:RoutingUtils){
+    this.router.config.forEach(curConf=>{
+      if (curConf.path=='contents')
+        this.populateModuleRoutes(curConf);
+    });
+    this.routingUtils.printRoutings(router);
+  }
+
+  populateModuleRoutes(route: Route){
+    moduleRoutes.forEach(curRoute=>{
+      route.children.push(curRoute);
+
+    });
+  }
+
+}
+```
+
+ The template will handle injecting the routes defined under moduleRoutes array into the main routing module. The injection will be via allocating the main Route holding the path 'contents' and adding the defined routes in this array beneath it.
+
+##### c - Logging
+The template has a utility to add a formatted messages with the proper explorer message type to the console of the explorer besides logging them to the message panel mentioned above as a feature for this template.
 
 _**To be Continued**_
