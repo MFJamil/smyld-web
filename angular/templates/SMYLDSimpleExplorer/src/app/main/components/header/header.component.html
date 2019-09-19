@@ -3,7 +3,6 @@
     <div [hidden]="doHideNav">
         <button mat-icon-button   (click)="toggetSideNav()" ><mat-icon >{{sideNavIcon}}</mat-icon></button>
     </div>
-    <!--button mat-icon-button ><mat-icon>reorder</mat-icon></button>-->
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="main_menu">
         <mat-icon>more_vert</mat-icon>
       </button>
@@ -14,7 +13,6 @@
         </button>
       </mat-menu>
       
-    <!--/contents/(mainContents:home)-->
     <a [routerLink]="['/contents',{outlets:{mainContents: ['home']}}]"><button mat-icon-button ><mat-icon>home</mat-icon></button></a>
     
     <div class="bigTitleDiv">{{appTitle}}</div>
