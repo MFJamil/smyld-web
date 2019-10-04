@@ -66,6 +66,8 @@ Feel free to extend the generator. The python functionality allow you to templat
 
 ## Running as docker 
 [![Docker Automated build](https://img.shields.io/docker/automated/smyld/tools_build)](https://hub.docker.com/r/smyld/tools_build)
+
+
 The program is available on dockerhub under the following url: [Spring Generator at Docker hub](https://hub.docker.com/r/smyld/tools_build). For developers who are currently using docker at their machines, you can run the docker image as following:
 
 ```shell
