@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://github.com/MFjamil/smyld-java/blob/master/LICENSE)
+
+
 # Angular Simple Explorer template
 
 
