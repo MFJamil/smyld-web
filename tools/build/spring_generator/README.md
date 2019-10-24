@@ -4,7 +4,9 @@
 
 # Spring Generator
 
-This python program generates a maven based full interactive project that includes Spring Boot in the backend and one of the web based frameworks (Angular, Vue or React) in the frontend, the generated project will include an already exchanged message with the backend that will get displayed on the frontend startup page.
+## What is this ?!
+
+Small templating program written in python which can be used to generate a Full stack Maven based project that contains interaction code between the Front and Back end layers.The generated back-end will be **Spring Boot** and the front-end will be one of the mostly used and famous web based frameworks **(Angular, Vue or React)**, the generated project will include an already exchanged message with the backend that will get displayed on the frontend startup page.
 
 ---
 ### Usage
