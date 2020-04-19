@@ -1,6 +1,12 @@
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://github.com/MFjamil/smyld-java/blob/master/LICENSE)
+
+
 # Spring Generator
 
-This python program generates a maven based full interactive project that includes Spring Boot in the backend and one of the web based frameworks (Angular, Vue or React) in the frontend, the generated project will include an already exchanged message with the backend that will get displayed on the frontend startup page.
+## What is this ?!
+
+Small templating program written in python which can be used to generate a Full stack Maven based project that contains interaction code between the Front and Back end layers.The generated back-end will be **Spring Boot** and the front-end will be one of the mostly used and famous web based frameworks **(Angular, Vue or React)**, the generated project will include an already exchanged message with the backend that will get displayed on the frontend startup page.
 
 ---
 ### Usage
@@ -63,7 +69,11 @@ _It is important to note that the generated frontends are all written in Typescr
 ## Contributors notice
 Feel free to extend the generator. The python functionality allow you to template the created folders, the created file name as well as the created file contents. Take a look at the already available templates to have an idea on how it is created.
 
-## Running as docker
+
+## Running as docker 
+[![Docker Automated build](https://img.shields.io/docker/automated/smyld/tools_build)](https://hub.docker.com/r/smyld/tools_build)
+
+
 The program is available on dockerhub under the following url: [Spring Generator at Docker hub](https://hub.docker.com/r/smyld/tools_build). For developers who are currently using docker at their machines, you can run the docker image as following:
 
 ```shell
