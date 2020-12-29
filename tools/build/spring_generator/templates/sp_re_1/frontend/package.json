@@ -14,7 +14,7 @@
     "typescript": "3.5.3"
   },
   "scripts": {
-    "start": "PORT=${cli.port} react-scripts start",
+    "start": "react-scripts start PORT=${cli.port}",
     "build": "react-scripts build && mv build ../backend/src/main/resources/public",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
