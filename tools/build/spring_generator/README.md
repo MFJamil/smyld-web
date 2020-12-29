@@ -76,8 +76,16 @@ Feel free to extend the generator. The python functionality allow you to templat
 
 The program is available on dockerhub under the following url: [Spring Generator at Docker hub](https://hub.docker.com/r/smyld/tools_build). For developers who are currently using docker at their machines, you can run the docker image as following:
 
+### Linux 
+
 ```shell
 docker run --user $(id -u):$(id -g) -v [Your projects path]:/project smyld/tools_build:spring_generator -n [ProjectName] -g [GroupName] [-t {angular,vue,react}] [-s] [-c]
+```
+
+### Windows 
+
+```shell
+docker run -v [Your projects path]:/project smyld/tools_build:spring_generator -n [ProjectName] -g [GroupName] [-t {angular,vue,react}] [-s] [-c]
 ```
 
 
@@ -92,6 +100,7 @@ You need to pay a special care for the command arguments above, you need to only
 docker run --user $(id -u):$(id -g) -v ~/Documents/temp:/project smyld/tools_build:spring_generator -n AngCutomer -g com.smyld.apps
 ```
 The command above will create Angular frontend project with the name "AngCustomer" that will be placed under "Documents/temp" folder as a folder named "AngCustomer" and will be referenced in Spring Boot with the package "com.smyld.apps".
+
 
 
 
